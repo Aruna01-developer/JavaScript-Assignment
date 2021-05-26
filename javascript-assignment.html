@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Javascript</title>
+	<style>
+		#styl {
+			color: lightblue;
+		}
+	</style>
+</head>
+<body>
+	<h2 id="styl">Console Now</h2>
+	<script>
+		var val1 = 10;
+		var val2 = 20;
+
+		//Arithmetic Operator
+		var sum = val1 + val2;
+		console.log(sum + ' value as ' + typeof(sum));
+
+		//typeof
+		var type = "firstName";
+		console.log(typeof(type));
+
+		//toUpperCase
+		let name = "john";
+		console.log(name.toUpperCase());
+
+		// object
+		const student = {
+			firstName :  'John',
+			lastName  :  'smith'
+		}
+		console.log(student.lastName);
+
+		//Conditional 
+		
+		let product = prompt("enter product name as phone/watch",);
+
+		if(product == 'watch')
+		{
+			console.log('product '+product +', price :'+ 500);
+		} 
+		else if(product == 'phone')
+		{
+			console.log('product '+product +', price :'+ 15,000);
+		} else {
+			console.log('Enter product name');
+		}
+
+		//ternary
+		let res = product == 'watch' ? console.log('product '+product +', price :'+ 500) : product == 'phone' ? console.log('product '+product +', price :'+ 15000) : console.log('Enter product name');
+
+		console.log(res);
+
+		//loops
+
+		let a = 1;
+
+		while(a <= 5)
+		{
+			console.log(a);
+			a++;
+		}
+
+
+		for(let i=1; i<=10; i++)
+		{
+			console.log(2*i);
+		}
+
+		let number = 2;
+		do {
+			console.log(number);
+		} while(number < 2);
+
+		let value = 8;
+		switch (value) {
+		  case 2: 
+			console.log('value is 2');
+			break;
+		  case 6:
+			console.log('value is 6');
+		    break;
+		    case 8: 
+			console.log('value is 8'); 
+		}
+
+		//function
+		function add(num1, num2)
+		{
+			return num1+num2;
+		}
+
+		let myfun = (d1, d2) => d1-d2;
+
+		let fun = (x,y,z) => {
+			console.log(x+y);
+			console.log(x+z);
+		} 
+
+
+	</script>
+</body>
+</html>
